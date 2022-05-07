@@ -31,3 +31,18 @@ Zeile hinzufügen
   <param-value>example.org</param-value>
 </context-param>
 ```
+
+## Apache neu Starten
+
+```
+systemctl restart apache2
+
+```
+
+## Tomcat9 neu Starten
+
+```
+systemctl restart tomcat9
+
+```
+
