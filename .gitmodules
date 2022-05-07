@@ -1,0 +1,3 @@
+[submodule "dokument"]
+	path = dokument
+	url = https://github.com/thorstenkloehn/dokument_Daux.git

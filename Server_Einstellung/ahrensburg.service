@@ -1,0 +1,15 @@
+[Unit]
+Description=ahrensburg.blog
+
+[Service]
+WorkingDirectory=/Server/ahrensburg.blog
+ExecStart=/Server/ahrensburg.blog/ahrensburg.blog
+Restart=always
+# ahrensburg-digital
+RestartSec=10
+KillSignal=SIGINT
+SyslogIdentifier=ahrensburg.blog
+User=root
+
+[Install]
+WantedBy=multi-user.target
