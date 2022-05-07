@@ -11,7 +11,16 @@ sudo apt-get install tomcat9
 * [OSM](https://switch2osm.org)
 * [Geoserver](https://geoserver.org/)
 
-````
+## Apache Einstellung Ändern
+
+```
+
+nano /etc/apache2/ports.conf
+
+```
+
+## Geoserver Einstellung Ändern
+```
 nano /var/lib/tomcat9/webapps/geoserver/WEB-INF/web.xml
 
 Zeile hinzufügen 
@@ -21,4 +30,4 @@ Zeile hinzufügen
   <param-name>GEOSERVER_CSRF_WHITELIST</param-name>
   <param-value>example.org</param-value>
 </context-param>
-````
+```
