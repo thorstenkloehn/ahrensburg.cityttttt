@@ -12,6 +12,7 @@ func main() {
 
 	err := viper.ReadInConfig() // Find and read the config file
 	if err != nil {             // Handle errors reading the config file
-		panic(fmt.Errorf("Fatal error config file: %w \n", err))
+		fmt.Errorf("Fatal error config file: %w \n", err)
+
 	}
 }
