@@ -395,3 +395,7 @@ sudo systemctl enable renderd
 ## Quellangabe
 Dieser Text basiert auf dem Artikel [Ubuntu 20.4](https://switch2osm.org/serving-tiles/manually-building-a-tile-server-20-04-lts/)  aus der OpenStreetMap and contributor und steht unter der Lizenz [CC BY-SA](http://creativecommons.org/licenses/by-sa/2.0/)
 und Maschinelle Übersetzung
+
+## Tomcat 9 installieren
+
+sudo apt-get install tomcat9
