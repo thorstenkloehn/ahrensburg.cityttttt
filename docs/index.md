@@ -522,6 +522,12 @@ cd ..
 sudo  systemctl start ahrensburg.service
 
 ```
+## C und C++ Installieren
 
+```
+
+sudo apt-get install cmake gcc clang gdb build-essential
+
+```
 
 
