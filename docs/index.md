@@ -8,7 +8,9 @@ sudo apt-get upgrade
 sudo apt-get install git-core
 apt-get install  gnupg2
 ```
-
+## Quellangabe 
+Dieser Text basiert auf dem Artikel [Ubuntu 20.4](https://switch2osm.org/serving-tiles/manually-building-a-tile-server-20-04-lts/)  aus der OpenStreetMap and contributor und steht unter der Lizenz [CC BY-SA](http://creativecommons.org/licenses/by-sa/2.0/)
+und Maschinelle Übersetzung
 #### OSM Installieren
 
 Auf dieser Seite wird beschrieben, wie Sie alle erforderliche Software installieren, einrichten und konfigurieren, um Ihren eigenen Kachelserver zu betreiben. Diese Schritt-für-Schritt-Anleitung wurde für Ubuntu Linux 20.04 LTS (Focal Fossa) geschrieben und im Mai 2020 getestet.
@@ -387,3 +389,7 @@ Damit es jedes Mal automatisch startet:
 sudo systemctl enable renderd
 
 ```
+
+## Quellangabe
+Dieser Text basiert auf dem Artikel [Ubuntu 20.4](https://switch2osm.org/serving-tiles/manually-building-a-tile-server-20-04-lts/)  aus der OpenStreetMap and contributor und steht unter der Lizenz [CC BY-SA](http://creativecommons.org/licenses/by-sa/2.0/)
+und Maschinelle Übersetzung
