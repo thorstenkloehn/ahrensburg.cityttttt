@@ -402,3 +402,43 @@ sudo apt-get install tomcat9
 
 ## Cerbprt Installieren
 
+### SSH in den Server
+SSH in den Server, auf dem Ihre HTTP-Website als Benutzer mit sudo-Berechtigungen ausgeführt wird.
+
+### snapd installieren
+Sie müssen snapd installieren und sicherstellen, dass Sie alle Anweisungen befolgen, um die klassische Snap-Unterstützung zu aktivieren.
+
+```
+sudo apt install snapd
+```
+
+#### Stellen Sie sicher, dass Ihre Version von snapd auf dem neuesten Stand ist
+
+Führen Sie die folgenden Anweisungen in der Befehlszeile auf dem Computer aus, um sicherzustellen, dass Sie über die neueste Version von snapd.
+```
+sudo snap install core; sudo snap refresh core
+```
+
+#### Certbot installieren
+Führen Sie diesen Befehl in der Befehlszeile auf dem Computer aus, um Certbot zu installieren.
+
+```
+sudo snap install --classic certbot
+```
+
+##### Bereiten Sie den Certbot-Befehl vor
+Führen Sie die folgende Anweisung in der Befehlszeile auf dem Computer aus, um sicherzustellen, dass der certbotBefehl ausgeführt werden kann.
+
+```
+
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+
+```
+
+#### Cerbort ausführen
+
+```
+
+sudo certbot certonly --standalone
+
+```
