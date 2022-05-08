@@ -449,3 +449,11 @@ sudo certbot certonly --standalone
 ### Quellangabe
 Dieser Text basiert auf dem Artikel [certbot instructions](https://www.eff.org/copyright)
 und Maschinelle Übersetzung
+
+## nginx
+
+```
+
+sudo apt-get install nginx -y
+
+```
