@@ -1,11 +1,10 @@
 export GOROOT=/usr/local/go
 export GOPATH=/go
-export phpcomposer=/$HOME/.composer/vendor/bin
-export PATH=$GOPATH/bin:$phpcomposer:$HOME/.cargo/bin:$GOROOT/bin:$PATH
+
+export PATH=$GOPATH/bin:$HOME/.cargo/bin:$GOROOT/bin:$PATH
 cd /Server
 
-git pull
-git submodule update --recursive --remote
+
 
  cd /Server/ahrensburg.blog
 go build

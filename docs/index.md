@@ -500,6 +500,17 @@ systemctl restart tomcat9
 
 ```
 
+### Go und Rust Installieren
+
+```
+mkdir ~/download
+cd ~/download
+wget https://go.dev/dl/go1.18.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.18.linux-amd64.tar.gz
+sudo curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sudo sh
+cd /Server
+
+```
 
 
 
