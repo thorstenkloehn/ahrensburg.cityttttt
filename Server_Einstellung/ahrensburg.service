@@ -1,14 +1,14 @@
 [Unit]
-Description=ahrensburg.blog
+Description=ahrensburg.city
 
 [Service]
-WorkingDirectory=/Server/ahrensburg.blog
-ExecStart=/Server/ahrensburg.blog/ahrensburg.blog
+WorkingDirectory=/Server/
+ExecStart=/Server/ahrensburg.city
 Restart=always
-# ahrensburg-digital
+# Ahrensburg.city
 RestartSec=10
 KillSignal=SIGINT
-SyslogIdentifier=ahrensburg.blog
+SyslogIdentifier=ahrensburg.city
 User=root
 
 [Install]

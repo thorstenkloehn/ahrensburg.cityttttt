@@ -509,6 +509,15 @@ wget https://go.dev/dl/go1.18.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.18.linux-amd64.tar.gz
 sudo curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sudo sh
 cd /Server
+make build
+cd config
+cp demo.config.yaml config.yaml
+nano config.yaml
+cd ..
+
+ sudo cp -u Server_Einstellung/ahrensburg.service /etc/systemd/system/ahrensburg.service
+ sudo  systemctl enable ahrensburg.service
+sudo  systemctl start ahrensburg.service
 
 ```
 
