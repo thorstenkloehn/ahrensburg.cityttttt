@@ -1,6 +1,6 @@
 ## Ubuntu 20.4
 
-[Windows](Windows)
+[Windows](doc/Windows)
 
 ### Installieren 
 
