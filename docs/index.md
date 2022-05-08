@@ -1,6 +1,7 @@
+[Ubuntu](index) - [Windows](Windows) - [Lernen](Lernen)
 ## Ubuntu 20.4
 
-[Ubuntu](index) - [Windows](Windows) - [Lernen](Lernen) 
+
 
 ### Installieren 
 
