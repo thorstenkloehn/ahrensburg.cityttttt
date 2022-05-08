@@ -457,3 +457,47 @@ und Maschinelle Übersetzung
 sudo apt-get install nginx -y
 
 ```
+
+## ahrensburg.city hinunderladen
+
+```
+
+git clone https://github.com/thorstenkloehn/ahrensburg.city.git /Server
+sudo apt-get install unzip
+unzip /Server/externe_daten/geoserver/geoserver-2.20.4-war.zip -d /var/lib/tomcat9/webapps
+
+```
+
+## Nginx config Datei
+
+```
+
+sudo cp -u /Server/Server_Einstellung/start.conf /etc/nginx/conf.d/start.conf
+rm /etc/nginx/sites-enabled/default
+sudo systemctl restart nginx
+
+```
+
+## Geoserver
+```
+nano /var/lib/tomcat9/webapps/geoserver/WEB-INF/web.xml
+
+Zeile hinzufügen
+
+
+<context-param>
+  <param-name>GEOSERVER_CSRF_WHITELIST</param-name>
+  <param-value>example.org</param-value>
+</context-param>
+
+```
+
+## Tomcat neu starten
+
+```
+
+systemctl restart tomcat9
+
+```
+
+
