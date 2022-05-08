@@ -7,6 +7,8 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install git-core
 apt-get install  gnupg2
+sudo apt install python3 python3-dev curl python-is-python3 -y
+sudo apt install python3-pip -y
 ```
 ## Quellangabe 
 Dieser Text basiert auf dem Artikel [Ubuntu 20.4](https://switch2osm.org/serving-tiles/manually-building-a-tile-server-20-04-lts/)  aus der OpenStreetMap and contributor und steht unter der Lizenz [CC BY-SA](http://creativecommons.org/licenses/by-sa/2.0/)
