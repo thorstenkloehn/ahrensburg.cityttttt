@@ -1,5 +1,5 @@
 package model
 
-type Hallo struct {
+type hhh struct {
 	Titel string
 }
