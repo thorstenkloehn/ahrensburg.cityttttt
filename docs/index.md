@@ -239,9 +239,7 @@ carto project.mml > mapnik.xml
 ````
 Sie haben jetzt ein XML-Stylesheet von Mapnik unter /home/thorsten/src/openstreetmap-carto/mapnik.xml .
 
-##### 
-
-Zunächst laden wir ahrensburg Karte hinunterladen
+##### Zunächst laden wir ahrensburg Karte hinunterladen
 
 ```
 
@@ -274,6 +272,7 @@ Es sollte 14 Mal mit „CREATE INDEX“ antworten.
 ###### Shapefile-Download
 Obwohl die meisten Daten, die zum Erstellen der Karte verwendet werden, direkt aus der OpenStreetMap-Datendatei stammen, die Sie oben heruntergeladen haben, werden noch einige Shapefiles für Dinge wie Ländergrenzen mit niedrigem Zoom benötigt. Um diese herunterzuladen und zu indizieren:
 ```
+pip3 install requests
 cd ~/src/openstreetmap-carto/
 scripts/get-external-data.py
 ```
