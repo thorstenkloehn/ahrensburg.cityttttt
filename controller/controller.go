@@ -13,7 +13,7 @@ var (
 	view, _ = template.ParseGlob("view/*")
 )
 
-func (start *Website) Startseite(w http.ResponseWriter, r *http.Request) {
+func (start *model.Hallo) Startseite(w http.ResponseWriter, r *http.Request) {
 	start.Titel = "Hallo"
-	view.ExecuteTemplate(w, "index.html", start)
+	view.ExecuteTemplate(w, "startseite.html", start)
 }

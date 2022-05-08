@@ -1,5 +1,5 @@
 package model
 
-type Website struct {
+type Hallo struct {
 	Titel string
 }
