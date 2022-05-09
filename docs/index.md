@@ -1,4 +1,4 @@
-[Ubuntu](index) - [Windows](Windows) - [Lernen](Lernen)
+[Ubuntu](index) - [Windows](Windows) - [Lernen](Lernen) - [Go](Go) - [Rust](Rust)
 ## Ubuntu 20.4
 
 

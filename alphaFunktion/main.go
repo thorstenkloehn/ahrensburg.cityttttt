@@ -11,8 +11,7 @@ import (
 func Testseite() {
 
 	var thorsten, name string
-	fmt.Println(viper.Get("hallo"))
-	db, err := sql.Open("postgres", viper.GetString("hallo"))
+	db, err := sql.Open("postgres", viper.GetString("DatenbankZugang"))
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -36,7 +35,7 @@ func Testseite() {
 		if mama != nil {
 			log.Fatal(mama)
 		}
-		fmt.Print("", name, thorsten)
+		fmt.Println("", name, thorsten)
 	}
 
 }
