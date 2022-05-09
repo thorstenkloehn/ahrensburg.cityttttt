@@ -1,20 +1,23 @@
-package main
+package alphaFunktion
 
 import (
 	"database/sql"
 	"fmt"
 	_ "github.com/lib/pq"
+	"github.com/spf13/viper"
 	"log"
 )
 
-func main() {
+func Testseite() {
 
 	var thorsten, name string
-	connStr := "user=test dbname=test sslmode=disable password=test"
-	db, err := sql.Open("postgres", connStr)
+	fmt.Println(viper.Get("hallo"))
+	db, err := sql.Open("postgres", viper.GetString("hallo"))
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	fmt.Println()
 	defer db.Close()
 
 	error := db.Ping()
@@ -33,6 +36,7 @@ func main() {
 		if mama != nil {
 			log.Fatal(mama)
 		}
-		fmt.Println(name, thorsten)
+		fmt.Print("", name, thorsten)
 	}
+
 }

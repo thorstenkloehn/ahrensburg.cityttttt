@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/gorilla/mux"
 	"github.com/spf13/viper"
+	"github.com/thorstenkloehn/ahrensburg.city/alphaFunktion"
 	"github.com/thorstenkloehn/ahrensburg.city/controller"
 	"net/http"
 )
@@ -20,8 +21,8 @@ func main() {
 	if err != nil {             // Handle errors reading the config file
 		panic(fmt.Errorf("Fatal error config file: %w \n", err))
 	}
+	viper.Set("hallo", fmt.Sprintf("user=%s password=%s dbname=%s sslmode=disable", viper.Get("Postgres_User"), viper.Get("Postgress_Passwort"), viper.Get("Postgress_Datenbank")))
 
-	fmt.Println(viper.GetString("Website_Name"))
 	var dir string
 
 	flag.StringVar(&dir, "dir", "./static", "the directory to serve files from. Defaults to the current dir")
@@ -30,5 +31,6 @@ func main() {
 	router.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir(dir))))
 	router.HandleFunc("/", start.Startseite)
 	fmt.Println("http://localhost:5000")
+	alphaFunktion.Testseite()
 	http.ListenAndServe(":5000", router)
 }
