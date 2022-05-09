@@ -530,5 +530,3 @@ sudo  systemctl start ahrensburg.service
 sudo apt-get install cmake gcc clang gdb build-essential
 
 ```
-
-
