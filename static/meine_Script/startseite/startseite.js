@@ -9,7 +9,7 @@ function onEachFeature(feature, layer) {
 var map = L.map('map').setView([53.6700755, 10.2071975], 13);
 
 L.tileLayer('https://ahrensburg.city/karte/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://ahrensburg.city">ahrensburg.city</a>,<a href="https://ahrensburg.city/docs/Impressum.html">Impressum</a>,<a href="https://ahrensburg.city/docs/Datenschutzerklarung.html">Datenschutzerklärung</a> , </a><a href="https://ahrensburg.city/docs/">Dokument</a>,&copy;<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    attribution: '&copy; <a href="https://ahrensburg.city">ahrensburg.city</a>,<a href="./docs/Impressum.html">Impressum</a>,<a href="./docs/Datenschutzerklarung.html">Datenschutzerklärung</a> , </a><a href="./docs/">Dokument</a>,&copy;<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
 

@@ -1,9 +1,10 @@
 package controller
 
 import (
+	"bytes"
 	"github.com/gorilla/mux"
-	"github.com/russross/blackfriday/v2"
 	"github.com/spf13/viper"
+	"github.com/yuin/goldmark"
 	"io/ioutil"
 	"net/http"
 	"text/template"
@@ -19,19 +20,21 @@ func (start *Website) Artikel(w http.ResponseWriter, r *http.Request) {
 
 	content, _ := ioutil.ReadFile("docs/index" + ".md")
 
-	output := blackfriday.Run(content)
 	start.Titel = viper.GetString("Website_Name")
-	start.Inhalt = string(output)
+	var buf bytes.Buffer
+	goldmark.Convert(content, &buf)
+	start.Titel = viper.GetString("Website_Name")
+	start.Inhalt = buf.String()
 	view.ExecuteTemplate(w, "docs.html", start)
 }
 
 func (start *Website) Artikels(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	content, _ := ioutil.ReadFile("docs/" + vars["Artikel"] + ".md")
-
-	output := blackfriday.Run(content)
+	var buf1 bytes.Buffer
+	goldmark.Convert(content, &buf1)
 	start.Titel = viper.GetString("Website_Name")
-	start.Inhalt = string(output)
+	start.Inhalt = buf1.String()
 	view.ExecuteTemplate(w, "docs.html", start)
 
 }
