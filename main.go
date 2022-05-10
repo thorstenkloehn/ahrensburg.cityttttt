@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"github.com/gorilla/mux"
 	"github.com/spf13/viper"
-	"github.com/thorstenkloehn/ahrensburg.city/alphaFunktion"
 	"github.com/thorstenkloehn/ahrensburg.city/controller"
 	"net/http"
 )
@@ -30,7 +29,9 @@ func main() {
 	router := mux.NewRouter()
 	router.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir(dir))))
 	router.HandleFunc("/", start.Startseite)
+	router.HandleFunc("/docs/{Artikel}", controller.Artikels)
+	router.HandleFunc("/docs/", controller.Artikel)
 	fmt.Println("http://localhost:5000")
-	alphaFunktion.Testseite()
+	//	alphaFunktion.Testseite()
 	http.ListenAndServe(":5000", router)
 }
