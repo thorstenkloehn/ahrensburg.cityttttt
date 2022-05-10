@@ -3,12 +3,13 @@ package controller
 import (
 	"github.com/spf13/viper"
 	_ "github.com/thorstenkloehn/ahrensburg.city/model"
-	"html/template"
 	"net/http"
+	"text/template"
 )
 
 type Website struct {
-	Titel string
+	Titel  string
+	Inhalt string
 }
 
 var (
