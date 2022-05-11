@@ -530,3 +530,17 @@ sudo  systemctl start ahrensburg.service
 sudo apt-get install cmake gcc clang gdb build-essential
 
 ```
+
+## PostgreSQL
+
+```
+sudo apt install postgresql postgresql-contrib postgis postgresql-12-postgis-3 postgresql-12-postgis-3-scripts
+
+```
+### ahrensburg
+
+```
+create database ahrensburg
+\c 
+
+```

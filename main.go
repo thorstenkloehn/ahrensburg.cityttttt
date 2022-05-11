@@ -20,7 +20,8 @@ func main() {
 	if err != nil {             // Handle errors reading the config file
 		panic(fmt.Errorf("Fatal error config file: %w \n", err))
 	}
-	viper.Set("DatenbankZugang", fmt.Sprintf("user=%s password=%s dbname=%s sslmode=disable", viper.Get("Postgres_User"), viper.Get("Postgress_Passwort"), viper.Get("Postgress_Datenbank")))
+	viper.Set("DatenbankZugang", fmt.Sprintf("user=%s password=%s dbname=ahrensburg sslmode=disable", viper.Get("Postgres_User"), viper.Get("Postgress_Passwort")))
+	viper.Set("MemberZugang", fmt.Sprintf("user=%s password=%s dbname=members sslmode=disable", viper.Get("Postgres_User"), viper.Get("Postgress_Passwort")))
 
 	var dir string
 
@@ -32,6 +33,6 @@ func main() {
 	router.HandleFunc("/docs/{Artikel}", start.Artikels)
 	router.HandleFunc("/docs/", start.Artikel)
 	fmt.Println("http://localhost:5000")
-	//	alphaFunktion.Testseite()
 	http.ListenAndServe(":5000", router)
+
 }
