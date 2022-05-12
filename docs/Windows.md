@@ -2,7 +2,6 @@
 ## Windows Gis Software
 
 * QGIS
-* PostgreSQL
 
 
 ## Windows
