@@ -6,6 +6,7 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/spf13/viper"
 	"github.com/yuin/goldmark"
+	"github.com/yuin/goldmark/renderer/html"
 	"io/ioutil"
 	"net/http"
 	"text/template"
@@ -21,6 +22,9 @@ func (start *Website) Artikel(w http.ResponseWriter, r *http.Request) {
 	markdown := goldmark.New(
 		goldmark.WithExtensions(
 			embed.New(),
+		), goldmark.WithRendererOptions(
+			html.WithHardWraps(),
+			html.WithXHTML(),
 		),
 	)
 
@@ -38,6 +42,9 @@ func (start *Website) Artikels(w http.ResponseWriter, r *http.Request) {
 	markdown := goldmark.New(
 		goldmark.WithExtensions(
 			embed.New(),
+		), goldmark.WithRendererOptions(
+			html.WithHardWraps(),
+			html.WithXHTML(),
 		),
 	)
 
