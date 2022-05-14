@@ -26,7 +26,7 @@ func (start *Website) Artikel(w http.ResponseWriter, r *http.Request) {
 
 	start.Titel = viper.GetString("Website_Name")
 	var buf bytes.Buffer
-	goldmark.Convert(content, &buf)
+	markdown.Convert(content, &buf)
 	start.Titel = viper.GetString("Website_Name")
 	start.Inhalt = buf.String()
 	view.ExecuteTemplate(w, "docs.html", start)
@@ -41,7 +41,7 @@ func (start *Website) Artikels(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	content, _ := ioutil.ReadFile("docs/" + vars["Artikel"] + ".md")
 	var buf1 bytes.Buffer
-	goldmark.Convert(content, &buf1)
+	markdown.Convert(content, &buf1)
 	start.Titel = viper.GetString("Website_Name")
 	start.Inhalt = buf1.String()
 	view.ExecuteTemplate(w, "docs.html", start)
