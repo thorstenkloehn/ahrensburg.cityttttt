@@ -2,9 +2,11 @@ package controller
 
 import (
 	"bytes"
+	"github.com/alecthomas/chroma/formatters/html"
 	"github.com/gorilla/mux"
 	"github.com/spf13/viper"
 	"github.com/yuin/goldmark"
+	highlighting "github.com/yuin/goldmark-highlighting"
 	"io/ioutil"
 	"net/http"
 	"text/template"
@@ -19,9 +21,15 @@ var (
 func (start *Website) Artikel(w http.ResponseWriter, r *http.Request) {
 	markdown := goldmark.New(
 		goldmark.WithExtensions(
-			embed.Embed,
+			highlighting.NewHighlighting(
+				highlighting.WithStyle("monokai"),
+				highlighting.WithFormatOptions(
+					html.WithLineNumbers(true),
+				),
+			),
 		),
 	)
+
 	content, _ := ioutil.ReadFile("docs/index" + ".md")
 
 	start.Titel = viper.GetString("Website_Name")
@@ -35,9 +43,15 @@ func (start *Website) Artikel(w http.ResponseWriter, r *http.Request) {
 func (start *Website) Artikels(w http.ResponseWriter, r *http.Request) {
 	markdown := goldmark.New(
 		goldmark.WithExtensions(
-			embed.Embed,
+			highlighting.NewHighlighting(
+				highlighting.WithStyle("monokai"),
+				highlighting.WithFormatOptions(
+					html.WithLineNumbers(true),
+				),
+			),
 		),
 	)
+
 	vars := mux.Vars(r)
 	content, _ := ioutil.ReadFile("docs/" + vars["Artikel"] + ".md")
 	var buf1 bytes.Buffer
