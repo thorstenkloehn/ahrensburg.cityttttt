@@ -1,5 +1,10 @@
 
 ## Ubuntu 20.4
+| foo | bar |
+| --- | --- |
+| baz | bim |
+
+
 
 
 ![](https://youtu.be/MsUykQ630ss)

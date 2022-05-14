@@ -40,6 +40,8 @@ github.com/13rac1/goldmark-embed v0.0.0-20201220231550-e6806f2de66a h1:97tpPJ82V
 github.com/13rac1/goldmark-embed v0.0.0-20201220231550-e6806f2de66a/go.mod h1:dxt3ggQZ3euHiXGfETfZPfA5OUpKgJn1s4vS+YT1MEU=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
+github.com/PaperPrototype/goldmark-embed v0.0.0-20220504173457-3e5148e3bccc h1:X02mxLPUi9lTYwvc9e3Kvjzx4LHSDdGMHI3miGwGJ00=
+github.com/PaperPrototype/goldmark-embed v0.0.0-20220504173457-3e5148e3bccc/go.mod h1:snppCNnSGPlu2AJKYT07uGivJptV+tM+sNd6ReaqUCU=
 github.com/alecthomas/chroma v0.10.0 h1:7XDcGkCQopCNKjZHfYrNLraA+M7e0fMiJ/Mfikbfjek=
 github.com/alecthomas/chroma v0.10.0/go.mod h1:jtJATyUxlIORhUOFNA9NZDWGAQ8wpxQQqNSB4rjA/1s=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=

@@ -12,6 +12,7 @@ require (
 
 require (
 	github.com/13rac1/goldmark-embed v0.0.0-20201220231550-e6806f2de66a // indirect
+	github.com/PaperPrototype/goldmark-embed v0.0.0-20220504173457-3e5148e3bccc // indirect
 	github.com/alecthomas/chroma v0.10.0 // indirect
 	github.com/dlclark/regexp2 v1.4.0 // indirect
 	github.com/fsnotify/fsnotify v1.5.4 // indirect

@@ -2,10 +2,11 @@ package controller
 
 import (
 	"bytes"
-	"github.com/13rac1/goldmark-embed"
 	"github.com/gorilla/mux"
 	"github.com/spf13/viper"
 	"github.com/yuin/goldmark"
+	highlighting "github.com/yuin/goldmark-highlighting"
+	"github.com/yuin/goldmark/extension"
 	"github.com/yuin/goldmark/parser"
 	"github.com/yuin/goldmark/renderer/html"
 	"io/ioutil"
@@ -27,7 +28,7 @@ func (start *Website) Artikel(w http.ResponseWriter, r *http.Request) {
 	markdown := goldmark.New(
 
 		goldmark.WithExtensions(
-			embed.New(),
+			extension.Table,
 		),
 		goldmark.WithParserOptions(
 			parser.WithBlockParsers(),
@@ -52,7 +53,8 @@ func (start *Website) Artikels(w http.ResponseWriter, r *http.Request) {
 	markdown := goldmark.New(
 
 		goldmark.WithExtensions(
-			embed.New(),
+			extension.Table,
+			highlighting.Highlighting,
 		),
 		goldmark.WithParserOptions(
 			parser.WithAutoHeadingID(),
