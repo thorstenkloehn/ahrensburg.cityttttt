@@ -6,6 +6,7 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/spf13/viper"
 	"github.com/yuin/goldmark"
+	"github.com/yuin/goldmark/parser"
 	"github.com/yuin/goldmark/renderer/html"
 	"io/ioutil"
 	"net/http"
@@ -24,11 +25,15 @@ func (start *Website) Artikel(w http.ResponseWriter, r *http.Request) {
 
 	start.Titel = viper.GetString("Website_Name")
 	markdown := goldmark.New(
-		goldmark.WithRendererOptions(
-			html.WithUnsafe(),
-		),
+
 		goldmark.WithExtensions(
 			embed.New(),
+		),
+		goldmark.WithParserOptions(
+			parser.WithBlockParsers(),
+		),
+		goldmark.WithRendererOptions(
+			html.WithUnsafe(),
 		),
 	)
 	var buf bytes.Buffer
@@ -45,11 +50,15 @@ func (start *Website) Artikels(w http.ResponseWriter, r *http.Request) {
 	content, _ := ioutil.ReadFile("docs/" + vars["Artikel"] + ".md")
 	var buf1 bytes.Buffer
 	markdown := goldmark.New(
-		goldmark.WithRendererOptions(
-			html.WithUnsafe(),
-		),
+
 		goldmark.WithExtensions(
 			embed.New(),
+		),
+		goldmark.WithParserOptions(
+			parser.WithAutoHeadingID(),
+		),
+		goldmark.WithRendererOptions(
+			html.WithUnsafe(),
 		),
 	)
 	markdown.Convert(content, &buf1)
