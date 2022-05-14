@@ -2,6 +2,7 @@ package controller
 
 import (
 	"bytes"
+	embed "github.com/13rac1/goldmark-embed"
 	"github.com/alecthomas/chroma/formatters/html"
 	"github.com/gorilla/mux"
 	"github.com/spf13/viper"
@@ -43,12 +44,7 @@ func (start *Website) Artikel(w http.ResponseWriter, r *http.Request) {
 func (start *Website) Artikels(w http.ResponseWriter, r *http.Request) {
 	markdown := goldmark.New(
 		goldmark.WithExtensions(
-			highlighting.NewHighlighting(
-				highlighting.WithStyle("monokai"),
-				highlighting.WithFormatOptions(
-					html.WithLineNumbers(true),
-				),
-			),
+			embed.New(),
 		),
 	)
 
