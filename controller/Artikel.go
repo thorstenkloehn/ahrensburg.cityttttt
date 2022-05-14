@@ -25,7 +25,6 @@ func (start *Website) Artikel(w http.ResponseWriter, r *http.Request) {
 	start.Titel = viper.GetString("Website_Name")
 	markdown := goldmark.New(
 		goldmark.WithRendererOptions(
-			html.WithXHTML(),
 			html.WithUnsafe(),
 		),
 		goldmark.WithExtensions(
@@ -47,7 +46,6 @@ func (start *Website) Artikels(w http.ResponseWriter, r *http.Request) {
 	var buf1 bytes.Buffer
 	markdown := goldmark.New(
 		goldmark.WithRendererOptions(
-			html.WithXHTML(),
 			html.WithUnsafe(),
 		),
 		goldmark.WithExtensions(
