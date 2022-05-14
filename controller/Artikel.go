@@ -17,7 +17,11 @@ var (
 )
 
 func (start *Website) Artikel(w http.ResponseWriter, r *http.Request) {
-
+	markdown := goldmark.New(
+		goldmark.WithExtensions(
+			embed.Embed,
+		),
+	)
 	content, _ := ioutil.ReadFile("docs/index" + ".md")
 
 	start.Titel = viper.GetString("Website_Name")
@@ -29,6 +33,11 @@ func (start *Website) Artikel(w http.ResponseWriter, r *http.Request) {
 }
 
 func (start *Website) Artikels(w http.ResponseWriter, r *http.Request) {
+	markdown := goldmark.New(
+		goldmark.WithExtensions(
+			embed.Embed,
+		),
+	)
 	vars := mux.Vars(r)
 	content, _ := ioutil.ReadFile("docs/" + vars["Artikel"] + ".md")
 	var buf1 bytes.Buffer
