@@ -32,7 +32,7 @@ func main() {
 	router.HandleFunc("/", start.Startseite)
 	router.HandleFunc("/docs/{Artikel}", start.Artikels)
 	router.HandleFunc("/docs/", start.Artikel)
-	router.HandleFunc("/mainjavascript/", start.mainjavascript)
+	router.HandleFunc("/javascript.js", start.Javascript)
 	fmt.Println("http://localhost:5000")
 	http.ListenAndServe(":5000", router)
 

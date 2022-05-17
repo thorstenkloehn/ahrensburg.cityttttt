@@ -21,6 +21,6 @@ func (start *Website) Startseite(w http.ResponseWriter, r *http.Request) {
 	view.ExecuteTemplate(w, "startseite.html", start)
 }
 
-func (start *Website) mainjavascript(w http.ResponseWriter, r *http.Request) {
-
+func (start *Website) Javascript(w http.ResponseWriter, r *http.Request) {
+	view.ExecuteTemplate(w, "javascript.js", start)
 }
