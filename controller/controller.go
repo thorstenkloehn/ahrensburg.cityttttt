@@ -20,3 +20,7 @@ func (start *Website) Startseite(w http.ResponseWriter, r *http.Request) {
 	start.Titel = viper.GetString("Website_Name")
 	view.ExecuteTemplate(w, "startseite.html", start)
 }
+
+func (start *Website) mainjavascript(w http.ResponseWriter, r *http.Request) {
+
+}
