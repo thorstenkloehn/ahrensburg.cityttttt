@@ -1,6 +1,6 @@
-<pre><code class="language-html"><h1>tttt</h1></code></pre>
+
 ## Ubuntu 20.04
-<h2>Thorsten</h2>
+
 ### Installieren 
 
 ```
