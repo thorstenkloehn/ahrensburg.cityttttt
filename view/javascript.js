@@ -27,18 +27,15 @@ laden.onload = function () {
 }
 
 laden.send();
-/* var gpx = './gpx/Auewanderweg/auewanderweg_gpx_20220519_191032.gpx'; // URL to your GPX file or the GPX itself
-new L.GPX(gpx, {async: true}).on('loaded', function(e) {
-    map.fitBounds(e.target.getBounds());
-}).addTo(map);
-*/
-var url = './gpx/Auewanderweg/auewanderweg_gpx_20220519_191032.gpx';
+
+var gpx = './gpx/Auewanderweg/auewanderweg_gpx_20220519_191032.gpx'; // URL to your GPX file or the GPX itself
+
 new L.GPX(url, {
     async: true,
     marker_options: {
-        startIconUrl: './static/Leaflet/gpx/pin-icon-start.png',
-        endIconUrl: './static/Leaflet/gpx/pin-icon-end.png',
-        shadowUrl: './static/Leaflet/gpx/pin-shadow.png'
+        startIconUrl: 'images/pin-icon-start.png',
+        endIconUrl: 'images/pin-icon-end.png',
+        shadowUrl: 'images/pin-shadow.png'
     }
 }).on('loaded', function(e) {
     map.fitBounds(e.target.getBounds());
