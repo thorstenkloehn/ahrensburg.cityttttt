@@ -24,11 +24,15 @@ func main() {
 	viper.Set("MemberZugang", fmt.Sprintf("user=%s password=%s dbname=members sslmode=disable", viper.Get("Postgres_User"), viper.Get("Postgress_Passwort")))
 
 	var dir string
+	var gpx string
 
 	flag.StringVar(&dir, "dir", "./static", "the directory to serve files from. Defaults to the current dir")
+
+	flag.StringVar(&gpx, "gpx", "./externe_daten/gpx", "the directory to serve files from. Defaults to the current dir")
 	flag.Parse()
 	router := mux.NewRouter()
 	router.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir(dir))))
+	router.PathPrefix("/gpx/").Handler(http.StripPrefix("/gpx/", http.FileServer(http.Dir(gpx))))
 	router.HandleFunc("/", start.Startseite)
 	router.HandleFunc("/docs/{Artikel}", start.Artikels)
 	router.HandleFunc("/docs/", start.Artikel)
