@@ -30,12 +30,13 @@ laden.send();
 
 var gpx = './gpx/Auewanderweg/auewanderweg_gpx_20220519_191032.gpx'; // URL to your GPX file or the GPX itself
 
-new L.GPX(url, {
+new L.GPX(gpx, {
     async: true,
     marker_options: {
-        startIconUrl: 'images/pin-icon-start.png',
-        endIconUrl: 'images/pin-icon-end.png',
-        shadowUrl: 'images/pin-shadow.png'
+        startIconUrl: 'static/Leaflet/gpx/pin-icon-start.png',
+        endIconUrl: 'static/Leaflet/gpx/pin-icon-end.png',
+        shadowUrl: 'static/Leaflet/gpx/pin-shadow.png',
+        wptIconUrls: 'static/Leaflet/gpx/pin-icon-wpt.png'
     }
 }).on('loaded', function(e) {
     map.fitBounds(e.target.getBounds());
