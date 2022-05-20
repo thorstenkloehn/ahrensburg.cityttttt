@@ -12,8 +12,6 @@ L.tileLayer('https://ahrensburg.city/karte/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://ahrensburg.city">ahrensburg.city</a>,<a href="./docs/Impressum">Impressum</a>,<a href="./docs/Datenschutzerklärung">Datenschutzerklärung</a> , </a><a href="./docs/">Dokument</a>,&copy;<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-v
-
 let laden = new XMLHttpRequest;
 laden.open('GET', 'geoserver/Ahrensburg/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=Ahrensburg%3Aahrensburg&maxFeatures=50&outputFormat=application%2Fjson', true);
 laden.onload = function () {
