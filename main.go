@@ -25,15 +25,17 @@ func main() {
 
 	var dir string
 	var gpx string
+	var images string
 
 	flag.StringVar(&dir, "dir", "./static", "the directory to serve files from. Defaults to the current dir")
 
 	flag.StringVar(&gpx, "gpx", "./externe_daten/gpx", "the directory to serve files from. Defaults to the current dir")
+	flag.StringVar(&images, "images", "./images/images", "the directory to serve files from. Defaults to the current dir")
 	flag.Parse()
 	router := mux.NewRouter()
 	router.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir(dir))))
 	router.PathPrefix("/gpx/").Handler(http.StripPrefix("/gpx/", http.FileServer(http.Dir(gpx))))
-
+	router.PathPrefix("/images/images").Handler(http.StripPrefix("/images/images/", http.FileServer(http.Dir(gpx))))
 	router.HandleFunc("/", start.Startseite)
 	router.HandleFunc("/docs/{Artikel}", start.Artikels)
 	router.HandleFunc("/docs/", start.Artikel)
