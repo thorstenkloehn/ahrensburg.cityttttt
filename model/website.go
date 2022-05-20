@@ -1,5 +1,6 @@
 package model
 
 type Website struct {
-	Titel string
+	Titel  string
+	Inhalt string
 }

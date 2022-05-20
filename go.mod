@@ -2,17 +2,14 @@ module github.com/thorstenkloehn/ahrensburg.city
 
 go 1.18
 
-replace github.com/thorstenkloehn/members => ../members
-
 require (
 	github.com/gorilla/mux v1.8.0
-	github.com/lib/pq v1.10.5
 	github.com/spf13/viper v1.11.0
+	github.com/yuin/goldmark v1.4.12
+	github.com/yuin/goldmark-highlighting v0.0.0-20220208100518-594be1970594
 )
 
 require (
-	github.com/13rac1/goldmark-embed v0.0.0-20201220231550-e6806f2de66a // indirect
-	github.com/PaperPrototype/goldmark-embed v0.0.0-20220504173457-3e5148e3bccc // indirect
 	github.com/alecthomas/chroma v0.10.0 // indirect
 	github.com/dlclark/regexp2 v1.4.0 // indirect
 	github.com/fsnotify/fsnotify v1.5.4 // indirect
@@ -21,15 +18,11 @@ require (
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/pelletier/go-toml v1.9.5 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.1 // indirect
-	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/spf13/afero v1.8.2 // indirect
 	github.com/spf13/cast v1.4.1 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/subosito/gotenv v1.2.0 // indirect
-	github.com/thorstenkloehn/members v0.0.0-20220510151105-d53751d079fc // indirect
-	github.com/yuin/goldmark v1.4.12 // indirect
-	github.com/yuin/goldmark-highlighting v0.0.0-20220208100518-594be1970594 // indirect
 	golang.org/x/sys v0.0.0-20220503163025-988cb79eb6c6 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	gopkg.in/ini.v1 v1.66.4 // indirect

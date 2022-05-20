@@ -14,8 +14,6 @@ import (
 	"text/template"
 )
 
-var ()
-
 var (
 	view1, _ = template.ParseGlob("view/*")
 )
