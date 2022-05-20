@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 	"github.com/spf13/viper"
 	"github.com/thorstenkloehn/ahrensburg.city/controller"
@@ -42,6 +43,6 @@ func main() {
 	router.HandleFunc("/docs/", start.Artikel)
 	router.HandleFunc("/javascript.js", start.Javascript)
 	fmt.Println("http://localhost:5000")
-	http.ListenAndServe(":5000", router)
+	http.ListenAndServe(":5000", handlers.CompressHandler(router))
 
 }
