@@ -35,7 +35,7 @@ func main() {
 	router := mux.NewRouter()
 	router.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir(dir))))
 	router.PathPrefix("/gpx/").Handler(http.StripPrefix("/gpx/", http.FileServer(http.Dir(gpx))))
-	router.PathPrefix("/images/images").Handler(http.StripPrefix("/images/images/", http.FileServer(http.Dir(gpx))))
+	router.PathPrefix("/images/images/").Handler(http.StripPrefix("/images/images/", http.FileServer(http.Dir(gpx))))
 	router.HandleFunc("/", start.Startseite)
 	router.HandleFunc("/docs/{Artikel}", start.Artikels)
 	router.HandleFunc("/docs/", start.Artikel)
