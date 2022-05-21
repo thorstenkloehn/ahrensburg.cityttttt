@@ -1,4 +1,5 @@
 ## Window
+* 
 ## Ubuntu
 
 ### Neue Datenbank erstellen
@@ -9,3 +10,10 @@ CREATE DATABASE ahrensburg;
 ```
 
 ### Postgis Erweitung
+
+```
+\c ahrensburg
+CREATE EXTENSION postgis;
+\q
+exit
+```
