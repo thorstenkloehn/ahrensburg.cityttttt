@@ -1,0 +1,763 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="ahrensburg_qfield.qgs (offline)" saveUserFull="Thorsten Klöhn" saveDateTime="2022-05-22T12:58:52" version="3.24.2-Tisler" saveUser="thors">
+  <homePath path=""/>
+  <title>ahrensburg_qfield.qgs (offline)</title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys nativeFormat="Wkt">
+      <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+      <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+      <srsid>3452</srsid>
+      <srid>4326</srid>
+      <authid>EPSG:4326</authid>
+      <description>WGS 84</description>
+      <projectionacronym>longlat</projectionacronym>
+      <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+      <geographicflag>true</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties>
+      <Option/>
+    </customproperties>
+    <layer-tree-layer checked="Qt::Checked" providerKey="ogr" source="./data.gpkg|layername=Bauliche_Anlagen_92d19e6f_dc13_49fd_9dbb_c0ae856699ba|option:QGIS_FORCE_WAL=ON" patch_size="-1,-1" expanded="1" legend_split_behavior="0" id="Bauliche_Anlagen_92d19e6f_dc13_49fd_9dbb_c0ae856699ba" name="Bauliche_Anlagen" legend_exp="">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer checked="Qt::Checked" providerKey="wms" source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://ahrensburg.city/karte/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=18&amp;zmin=0" patch_size="-1,-1" expanded="1" legend_split_behavior="0" id="ahrensburg_city_4ded7afd_a368_4a29_a6e6_e4b0442a7344" name="ahrensburg.city" legend_exp="">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>Bauliche_Anlagen_92d19e6f_dc13_49fd_9dbb_c0ae856699ba</item>
+      <item>ahrensburg_city_4ded7afd_a368_4a29_a6e6_e4b0442a7344</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings maxScale="0" intersection-snapping="0" type="1" minScale="0" enabled="0" tolerance="12" unit="1" self-snapping="0" mode="2" scaleDependencyMode="0">
+    <individual-layer-settings>
+      <layer-setting maxScale="0" type="1" units="1" minScale="0" enabled="0" tolerance="12" id="Bauliche_Anlagen_92d19e6f_dc13_49fd_9dbb_c0ae856699ba"/>
+    </individual-layer-settings>
+  </snapping-settings>
+  <relations/>
+  <polymorphicRelations/>
+  <mapcanvas name="theMapCanvas" annotationsVisible="1">
+    <units>degrees</units>
+    <extent>
+      <xmin>10.17243171021375048</xmin>
+      <ymin>53.60829869358701671</ymin>
+      <xmax>10.29743171021375048</xmax>
+      <ymax>53.73329869358701671</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys nativeFormat="Wkt">
+        <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <projectModels/>
+  <legend updateDrawingOrder="true">
+    <legendlayer showFeatureCount="0" checked="Qt::Checked" drawingOrder="-1" open="true" name="Bauliche_Anlagen">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile visible="1" isInOverview="0" layerid="Bauliche_Anlagen_92d19e6f_dc13_49fd_9dbb_c0ae856699ba"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer showFeatureCount="0" checked="Qt::Checked" drawingOrder="-1" open="true" name="ahrensburg.city">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile visible="1" isInOverview="0" layerid="ahrensburg_city_4ded7afd_a368_4a29_a6e6_e4b0442a7344"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <main-annotation-layer autoRefreshTime="0" refreshOnNotifyMessage="" type="annotation" autoRefreshEnabled="0" refreshOnNotifyEnabled="0" legendPlaceholderImage="">
+    <id>Beschriftungen_50d72f1b_f9e6_479c_bb27_a58a07f1ca3c</id>
+    <datasource></datasource>
+    <keywordList>
+      <value></value>
+    </keywordList>
+    <layername>Beschriftungen</layername>
+    <srs>
+      <spatialrefsys nativeFormat="Wkt">
+        <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </srs>
+    <resourceMetadata>
+      <identifier></identifier>
+      <parentidentifier></parentidentifier>
+      <language></language>
+      <type></type>
+      <title></title>
+      <abstract></abstract>
+      <links/>
+      <fees></fees>
+      <encoding></encoding>
+      <crs>
+        <spatialrefsys nativeFormat="Wkt">
+          <wkt></wkt>
+          <proj4></proj4>
+          <srsid>0</srsid>
+          <srid>0</srid>
+          <authid></authid>
+          <description></description>
+          <projectionacronym></projectionacronym>
+          <ellipsoidacronym></ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </crs>
+      <extent/>
+    </resourceMetadata>
+    <items/>
+    <layerOpacity>1</layerOpacity>
+    <blendMode>0</blendMode>
+    <paintEffect/>
+  </main-annotation-layer>
+  <projectlayers>
+    <maplayer minScale="100000000" type="vector" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" maxScale="0" legendPlaceholderImage="" simplifyLocal="1" refreshOnNotifyMessage="" symbologyReferenceScale="-1" autoRefreshEnabled="0" simplifyAlgorithm="0" styleCategories="AllStyleCategories" labelsEnabled="0" wkbType="Point" geometry="Point" autoRefreshTime="0" simplifyMaxScale="1" readOnly="0" refreshOnNotifyEnabled="0" simplifyDrawingHints="0">
+      <id>Bauliche_Anlagen_92d19e6f_dc13_49fd_9dbb_c0ae856699ba</id>
+      <datasource>./data.gpkg|layername=Bauliche_Anlagen_92d19e6f_dc13_49fd_9dbb_c0ae856699ba|option:QGIS_FORCE_WAL=ON</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Bauliche_Anlagen</layername>
+      <srs>
+        <spatialrefsys nativeFormat="Wkt">
+          <wkt>GEOGCRS["Undefined geographic SRS",DATUM["unknown",ELLIPSOID["unknown",6378137,298.257223563,LENGTHUNIT["metre",1,ID["EPSG",9001]]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433,ID["EPSG",9122]]],CS[ellipsoidal,2],AXIS["latitude",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433,ID["EPSG",9122]]],AXIS["longitude",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433,ID["EPSG",9122]]]]</wkt>
+          <proj4>+proj=longlat +ellps=WGS84 +no_defs +type=crs</proj4>
+          <srsid>0</srsid>
+          <srid>0</srid>
+          <authid></authid>
+          <description>Undefined geographic SRS</description>
+          <projectionacronym></projectionacronym>
+          <ellipsoidacronym>PARAMETER:6378137:6356752.31424517929553986</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title>Bauliche_Anlagen_92d19e6f_dc13_49fd_9dbb_c0ae856699ba (offline)</title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys nativeFormat="Wkt">
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial crs="" maxz="0" miny="0" maxx="0" minx="0" maxy="0" dimensions="2" minz="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal endField="" endExpression="" accumulate="0" enabled="0" startExpression="" fixedDuration="0" limitMode="0" startField="" durationField="" durationUnit="min" mode="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 forceraster="0" type="singleSymbol" symbollevels="0" referencescale="-1" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" type="marker" clip_to_extent="1" force_rhr="0" name="0">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleMarker" enabled="1" locked="0" pass="0">
+              <Option type="Map">
+                <Option type="QString" value="0" name="angle"/>
+                <Option type="QString" value="square" name="cap_style"/>
+                <Option type="QString" value="114,155,111,255" name="color"/>
+                <Option type="QString" value="1" name="horizontal_anchor_point"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="circle" name="name"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                <Option type="QString" value="solid" name="outline_style"/>
+                <Option type="QString" value="0" name="outline_width"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="diameter" name="scale_method"/>
+                <Option type="QString" value="2" name="size"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="size_map_unit_scale"/>
+                <Option type="QString" value="MM" name="size_unit"/>
+                <Option type="QString" value="1" name="vertical_anchor_point"/>
+              </Option>
+              <prop v="0" k="angle"/>
+              <prop v="square" k="cap_style"/>
+              <prop v="114,155,111,255" k="color"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="circle" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="2" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="MM" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option type="Map">
+          <Option type="QString" value="Bauliche_Anlagen_92d19e6f_dc13_49fd_9dbb_c0ae856699ba" name="QFieldSync/remoteLayerId"/>
+          <Option type="QString" value="id" name="QFieldSync/sourceDataPrimaryKeys"/>
+          <Option type="int" value="0" name="embeddedWidgets/count"/>
+          <Option type="bool" value="true" name="isOfflineEditable"/>
+          <Option type="QString" value="" name="layerNameSuffix"/>
+          <Option type="QString" value="Bauliche_Anlagen_92d19e6f_dc13_49fd_9dbb_c0ae856699ba" name="remoteLayerId"/>
+          <Option type="QString" value="postgres" name="remoteProvider"/>
+          <Option type="QString" value="dbname='ahrensburg' host=localhost port=5432 sslmode=disable key='id' type=Point checkPrimaryKeyUnicity='1' table=&quot;public&quot;.&quot;Bauliche_Anlagen&quot; (geom)" name="remoteSource"/>
+          <Option type="invalid" name="variableNames"/>
+          <Option type="invalid" name="variableValues"/>
+        </Option>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory sizeScale="3x:0,0,0,0,0,0" barWidth="5" sizeType="MM" spacing="5" labelPlacementMethod="XHeight" spacingUnitScale="3x:0,0,0,0,0,0" minScaleDenominator="0" lineSizeType="MM" penAlpha="255" penColor="#000000" penWidth="0" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" opacity="1" minimumSize="0" direction="0" scaleBasedVisibility="0" maxScaleDenominator="1e+08" showAxis="1" backgroundColor="#ffffff" diagramOrientation="Up" scaleDependency="Area" enabled="0" width="15" spacingUnit="MM" backgroundAlpha="255" height="15">
+          <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute color="#000000" field="" label=""/>
+          <axisSymbol>
+            <symbol alpha="1" type="line" clip_to_extent="1" force_rhr="0" name="">
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+              <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+                <Option type="Map">
+                  <Option type="QString" value="0" name="align_dash_pattern"/>
+                  <Option type="QString" value="square" name="capstyle"/>
+                  <Option type="QString" value="5;2" name="customdash"/>
+                  <Option type="QString" value="3x:0,0,0,0,0,0" name="customdash_map_unit_scale"/>
+                  <Option type="QString" value="MM" name="customdash_unit"/>
+                  <Option type="QString" value="0" name="dash_pattern_offset"/>
+                  <Option type="QString" value="3x:0,0,0,0,0,0" name="dash_pattern_offset_map_unit_scale"/>
+                  <Option type="QString" value="MM" name="dash_pattern_offset_unit"/>
+                  <Option type="QString" value="0" name="draw_inside_polygon"/>
+                  <Option type="QString" value="bevel" name="joinstyle"/>
+                  <Option type="QString" value="35,35,35,255" name="line_color"/>
+                  <Option type="QString" value="solid" name="line_style"/>
+                  <Option type="QString" value="0.26" name="line_width"/>
+                  <Option type="QString" value="MM" name="line_width_unit"/>
+                  <Option type="QString" value="0" name="offset"/>
+                  <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                  <Option type="QString" value="MM" name="offset_unit"/>
+                  <Option type="QString" value="0" name="ring_filter"/>
+                  <Option type="QString" value="0" name="trim_distance_end"/>
+                  <Option type="QString" value="3x:0,0,0,0,0,0" name="trim_distance_end_map_unit_scale"/>
+                  <Option type="QString" value="MM" name="trim_distance_end_unit"/>
+                  <Option type="QString" value="0" name="trim_distance_start"/>
+                  <Option type="QString" value="3x:0,0,0,0,0,0" name="trim_distance_start_map_unit_scale"/>
+                  <Option type="QString" value="MM" name="trim_distance_start_unit"/>
+                  <Option type="QString" value="0" name="tweak_dash_pattern_on_corners"/>
+                  <Option type="QString" value="0" name="use_custom_dash"/>
+                  <Option type="QString" value="3x:0,0,0,0,0,0" name="width_map_unit_scale"/>
+                </Option>
+                <prop v="0" k="align_dash_pattern"/>
+                <prop v="square" k="capstyle"/>
+                <prop v="5;2" k="customdash"/>
+                <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+                <prop v="MM" k="customdash_unit"/>
+                <prop v="0" k="dash_pattern_offset"/>
+                <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
+                <prop v="MM" k="dash_pattern_offset_unit"/>
+                <prop v="0" k="draw_inside_polygon"/>
+                <prop v="bevel" k="joinstyle"/>
+                <prop v="35,35,35,255" k="line_color"/>
+                <prop v="solid" k="line_style"/>
+                <prop v="0.26" k="line_width"/>
+                <prop v="MM" k="line_width_unit"/>
+                <prop v="0" k="offset"/>
+                <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                <prop v="MM" k="offset_unit"/>
+                <prop v="0" k="ring_filter"/>
+                <prop v="0" k="trim_distance_end"/>
+                <prop v="3x:0,0,0,0,0,0" k="trim_distance_end_map_unit_scale"/>
+                <prop v="MM" k="trim_distance_end_unit"/>
+                <prop v="0" k="trim_distance_start"/>
+                <prop v="3x:0,0,0,0,0,0" k="trim_distance_start_map_unit_scale"/>
+                <prop v="MM" k="trim_distance_start_unit"/>
+                <prop v="0" k="tweak_dash_pattern_on_corners"/>
+                <prop v="0" k="use_custom_dash"/>
+                <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option type="QString" value="" name="name"/>
+                    <Option name="properties"/>
+                    <Option type="QString" value="collection" name="type"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </axisSymbol>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings obstacle="0" placement="0" zIndex="0" linePlacementFlags="18" dist="0" priority="0" showAll="1">
+        <properties>
+          <Option type="Map">
+            <Option type="QString" value="" name="name"/>
+            <Option name="properties"/>
+            <Option type="QString" value="collection" name="type"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field configurationFlags="None" name="fid">
+          <editWidget type="Hidden">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="id">
+          <editWidget type="Hidden">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="name">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option type="bool" value="false" name="IsMultiline"/>
+                <Option type="bool" value="false" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="popupContent">
+          <editWidget type="TextEdit">
+            <config>
+              <Option type="Map">
+                <Option type="bool" value="false" name="IsMultiline"/>
+                <Option type="bool" value="false" name="UseHtml"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="Foto">
+          <editWidget type="ExternalResource">
+            <config>
+              <Option type="Map">
+                <Option type="int" value="0" name="DocumentViewer"/>
+                <Option type="int" value="0" name="DocumentViewerHeight"/>
+                <Option type="int" value="0" name="DocumentViewerWidth"/>
+                <Option type="bool" value="true" name="FileWidget"/>
+                <Option type="bool" value="true" name="FileWidgetButton"/>
+                <Option type="QString" value="" name="FileWidgetFilter"/>
+                <Option type="Map" name="PropertyCollection">
+                  <Option type="QString" value="" name="name"/>
+                  <Option type="invalid" name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+                <Option type="int" value="1" name="RelativeStorage"/>
+                <Option type="QString" value="" name="StorageAuthConfigId"/>
+                <Option type="int" value="0" name="StorageMode"/>
+                <Option type="QString" value="" name="StorageType"/>
+              </Option>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" field="fid" name=""/>
+        <alias index="1" field="id" name=""/>
+        <alias index="2" field="name" name=""/>
+        <alias index="3" field="popupContent" name=""/>
+        <alias index="4" field="Foto" name=""/>
+      </aliases>
+      <defaults>
+        <default applyOnUpdate="0" expression="" field="fid"/>
+        <default applyOnUpdate="0" expression="" field="id"/>
+        <default applyOnUpdate="0" expression="" field="name"/>
+        <default applyOnUpdate="0" expression="" field="popupContent"/>
+        <default applyOnUpdate="0" expression="" field="Foto"/>
+      </defaults>
+      <constraints>
+        <constraint notnull_strength="1" constraints="3" field="fid" unique_strength="1" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="2" field="id" unique_strength="1" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" field="name" unique_strength="0" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" field="popupContent" unique_strength="0" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" field="Foto" unique_strength="0" exp_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" exp="" field="fid"/>
+        <constraint desc="" exp="" field="id"/>
+        <constraint desc="" exp="" field="name"/>
+        <constraint desc="" exp="" field="popupContent"/>
+        <constraint desc="" exp="" field="Foto"/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column type="field" hidden="0" width="-1" name="id"/>
+          <column type="field" hidden="0" width="-1" name="name"/>
+          <column type="field" hidden="0" width="-1" name="popupContent"/>
+          <column type="field" hidden="0" width="-1" name="Foto"/>
+          <column type="actions" hidden="1" width="-1"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS-Formulare können eine Python-Funktion haben,, die aufgerufen wird, wenn sich das Formular öffnet
+
+Diese Funktion kann verwendet werden um dem Formular Extralogik hinzuzufügen.
+
+Der Name der Funktion wird im Feld "Python Init-Function" angegeben
+Ein Beispiel folgt:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="Foto"/>
+        <field editable="1" name="id"/>
+        <field editable="1" name="name"/>
+        <field editable="1" name="popupContent"/>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="Foto"/>
+        <field labelOnTop="0" name="id"/>
+        <field labelOnTop="0" name="name"/>
+        <field labelOnTop="0" name="popupContent"/>
+      </labelOnTop>
+      <reuseLastValue>
+        <field reuseLastValue="0" name="Foto"/>
+        <field reuseLastValue="0" name="id"/>
+        <field reuseLastValue="0" name="name"/>
+        <field reuseLastValue="0" name="popupContent"/>
+      </reuseLastValue>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression>"name"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer autoRefreshTime="0" maxScale="0" refreshOnNotifyMessage="" type="raster" hasScaleBasedVisibilityFlag="0" minScale="1e+08" autoRefreshEnabled="0" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories" legendPlaceholderImage="">
+      <extent>
+        <xmin>-20037508.34278924390673637</xmin>
+        <ymin>-20037508.34278924763202667</ymin>
+        <xmax>20037508.34278924390673637</xmax>
+        <ymax>20037508.34278924763202667</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>-180</xmin>
+        <ymin>-85.05112877980660357</ymin>
+        <xmax>179.99999999999997158</xmax>
+        <ymax>85.05112877980660357</ymax>
+      </wgs84extent>
+      <id>ahrensburg_city_4ded7afd_a368_4a29_a6e6_e4b0442a7344</id>
+      <datasource>crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=https://ahrensburg.city/karte/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=18&amp;zmin=0</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>ahrensburg.city</layername>
+      <srs>
+        <spatialrefsys nativeFormat="Wkt">
+          <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Web mapping and visualisation."],AREA["World between 85.06°S and 85.06°N."],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo-Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys nativeFormat="Wkt">
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider>wms</provider>
+      <noData>
+        <noDataList useSrcNoData="0" bandNo="1"/>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal fetchMode="0" enabled="0" mode="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <customproperties>
+        <Option type="Map">
+          <Option type="QString" value="ahrensburg_city_4ded7afd_a368_4a29_a6e6_e4b0442a7344" name="QFieldSync/remoteLayerId"/>
+          <Option type="QString" value="Value" name="identify/format"/>
+        </Option>
+      </customproperties>
+      <pipe-data-defined-properties>
+        <Option type="Map">
+          <Option type="QString" value="" name="name"/>
+          <Option name="properties"/>
+          <Option type="QString" value="collection" name="type"/>
+        </Option>
+      </pipe-data-defined-properties>
+      <pipe>
+        <provider>
+          <resampling enabled="false" zoomedInResamplingMethod="nearestNeighbour" maxOversampling="2" zoomedOutResamplingMethod="nearestNeighbour"/>
+        </provider>
+        <rasterrenderer type="singlebandcolordata" nodataColor="" opacity="1" band="1" alphaBand="-1">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>None</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+        </rasterrenderer>
+        <brightnesscontrast contrast="0" gamma="1" brightness="0"/>
+        <huesaturation invertColors="0" colorizeBlue="128" colorizeStrength="100" colorizeGreen="128" colorizeRed="255" colorizeOn="0" grayscaleMode="0" saturation="0"/>
+        <rasterresampler maxOversampling="2"/>
+        <resamplingStage>resamplingFilter</resamplingStage>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="Bauliche_Anlagen_92d19e6f_dc13_49fd_9dbb_c0ae856699ba"/>
+    <layer id="ahrensburg_city_4ded7afd_a368_4a29_a6e6_e4b0442a7344"/>
+  </layerorder>
+  <properties>
+    <Digitizing>
+      <AvoidIntersectionsMode type="int">0</AvoidIntersectionsMode>
+    </Digitizing>
+    <Gui>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+    </Gui>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <Measure>
+      <Ellipsoid type="QString">EPSG:7030</Ellipsoid>
+    </Measure>
+    <Measurement>
+      <AreaUnits type="QString">m2</AreaUnits>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+    </Measurement>
+    <OfflineEditingPlugin>
+      <OfflineDbPath type="QString">./data.gpkg</OfflineDbPath>
+    </OfflineEditingPlugin>
+    <PAL>
+      <CandidatesLinePerCM type="double">5</CandidatesLinePerCM>
+      <CandidatesPolygonPerCM type="double">2.5</CandidatesPolygonPerCM>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <DrawUnplaced type="bool">false</DrawUnplaced>
+      <PlacementEngineVersion type="int">1</PlacementEngineVersion>
+      <SearchMethod type="int">0</SearchMethod>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <TextFormat type="int">0</TextFormat>
+      <UnplacedColor type="QString">255,0,0,255</UnplacedColor>
+    </PAL>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+    </PositionPrecision>
+    <QFieldSync>
+      <exportDirectoryProject type="QString">D:/ahrensburg.city/externe_daten/qfields/export</exportDirectoryProject>
+    </QFieldSync>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <qfieldsync>
+      <originalProjectPath type="QString">D:\ahrensburg.city\externe_daten\qfields\qgis\ahrensburg.qgs</originalProjectPath>
+    </qfieldsync>
+  </properties>
+  <dataDefinedServerProperties>
+    <Option type="Map">
+      <Option type="QString" value="" name="name"/>
+      <Option name="properties"/>
+      <Option type="QString" value="collection" name="type"/>
+    </Option>
+  </dataDefinedServerProperties>
+  <visibility-presets/>
+  <transformContext/>
+  <projectMetadata>
+    <identifier></identifier>
+    <parentidentifier></parentidentifier>
+    <language></language>
+    <type></type>
+    <title>ahrensburg_qfield.qgs (offline)</title>
+    <abstract></abstract>
+    <links/>
+    <author>Thorsten Klöhn</author>
+    <creation>2022-05-22T12:33:53</creation>
+  </projectMetadata>
+  <Annotations/>
+  <Layouts/>
+  <mapViewDocks3D/>
+  <Bookmarks/>
+  <ProjectViewSettings UseProjectScales="0">
+    <Scales/>
+  </ProjectViewSettings>
+  <ProjectTimeSettings timeStepUnit="h" timeStep="1" cumulativeTemporalRange="0" frameRate="1"/>
+  <ProjectDisplaySettings>
+    <BearingFormat id="bearing">
+      <Option type="Map">
+        <Option type="QChar" value="" name="decimal_separator"/>
+        <Option type="int" value="6" name="decimals"/>
+        <Option type="int" value="0" name="direction_format"/>
+        <Option type="int" value="0" name="rounding_type"/>
+        <Option type="bool" value="false" name="show_plus"/>
+        <Option type="bool" value="true" name="show_thousand_separator"/>
+        <Option type="bool" value="false" name="show_trailing_zeros"/>
+        <Option type="QChar" value="" name="thousand_separator"/>
+      </Option>
+    </BearingFormat>
+  </ProjectDisplaySettings>
+</qgis>
